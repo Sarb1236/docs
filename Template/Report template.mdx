@@ -1,0 +1,39 @@
+---
+title: Project Report
+description: A structured project report with embedded components
+---
+
+import { Callout, Tabs, Tab, Steps } from 'mintlify/components'
+
+# 🧾 Project Report: [Project Name]
+
+A comprehensive report generated using **Mintlify MDX**. This includes project objectives, data sources, processing steps, and results — all integrated with interactive components.
+
+---
+
+## 🥅 Objective
+
+<Callout emoji="🎯">
+This section explains what the goal of the project is and what problem it solves.
+</Callout>
+
+Example:
+> The aim of this project is to build a space-efficient monthly vendor activity table using NYC Yellow Taxi trip data, compressing daily metrics into arrays for optimal performance.
+
+---
+
+## 🗂️ Data Sources
+
+- NYC Yellow Taxi Trip Data
+- Dimensional Lookups (Zone, Date, Vendor)
+- External APIs (if any)
+
+```js
+// Example of data schema
+{
+  vendorID: "1",
+  trip_distance: 2.5,
+  passenger_count: 1,
+  fare_amount: 12.5,
+  pickup_datetime: "2023-01-05T13:00:00"
+}
