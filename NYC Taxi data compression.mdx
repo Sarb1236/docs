@@ -2,6 +2,10 @@
 
 This documentation accompanies a Jupyter Notebook that processes NYC Yellow Taxi trip data and transforms it into a **space-efficient monthly summary** for each taxi vendor. This compact aggregation method significantly reduces storage and enhances query performance, particularly in distributed analytics systems like Microsoft Fabric.
 
+Code Repo:
+https://github.com/Sarb1236/NYC-Yellow-Trip-Data-Compression/tree/main/Download%20Raw%20Yellow%20Taxi%20data
+https://github.com/Sarb1236/NYC-Yellow-Trip-Data-Compression/tree/main/Monthly_Agg_Analysis
+
 ## Overview: What the Code Does
 
 The notebook ingests raw `yellow_tripdata`, aggregates it at a daily level, and then compresses it into a monthly-level fact table where each vendor has **one row per month**. Within this row, daily values (e.g., trip counts, fares, tips) are stored in arrays, ordered using a **reverse-day index** (e.g., 31st = 0, 30th = 1, etc.).
