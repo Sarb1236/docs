@@ -62,6 +62,10 @@ In these contexts, the Accumulating Snapshot Fact table serves as a robust analy
 
 This project employs a structured data architecture, commonly referred to as a "Medallion Architecture" (Bronze, Silver, Gold layers), to systematically build and refine the analytical fact table. Below, we'll walk through the code snippets that bring each layer to life.
 
+Data and code notebook: 
+
+[Data-Warehousing-Types-of-Facts-design/Accumulating Snapshot Fact Modelling at main · Sarb1236/Data-Warehousing-Types-of-Facts-design](https://github.com/Sarb1236/Data-Warehousing-Types-of-Facts-design/tree/main/Accumulating%20Snapshot%20Fact%20Modelling)
+
 ### 1. Bronze Layer: Raw Data Ingestion
 
 The Bronze layer is our initial landing zone for raw, untransformed data. It preserves the original state of the source data, directly loading CSV files into Delta tables.
