@@ -2,7 +2,7 @@
 title: "Accumulating Snapshot Fact Modelling"
 ---
 
-# Project Documentation: Understanding the Customer Order Lifecycle 
+# Project Documentation: Understanding the Customer Order Lifecycle
 
 Welcome to the documentation for this project, which focuses on tracking the complete lifecycle of customer orders, from placement to final delivery. Our objective is to provide comprehensive insights into this process using a data warehousing technique known as "Accumulating Snapshot Fact Modelling." This document will explain the core concepts and practical applications of this methodology.
 
@@ -396,5 +396,3 @@ WHERE f.days_to_deliver IS NOT NULL
 **Explanation:** This SQL code creates a `VIEW` called `gold_order_summary`. This view simplifies data consumption for reporting tools by pre-joining the `fact_order_lifecycle` table with the `dim_customers` and `dim_products` tables (again, only considering the current dimension records). It selects key business-friendly columns like `Customer_Name`, `product_category_name`, `order_date`, `total_price`, and the calculated `days_to_ship` and `days_to_deliver`. By providing a view, business users can easily query this consolidated data without needing to understand the underlying table structures or join logic.
 
 This layered architectural approach ensures data quality, traceability, and ease of consumption for diverse analytical requirements.
-
-We trust this documentation provides a clear and comprehensive understanding of this project and the principles of Accumulating Snapshot Fact Modelling. Should you have any further questions, please feel free to inquire.
